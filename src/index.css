@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
 
 /* base styles */
 *{
@@ -22,7 +22,7 @@
 }
 .navbar a{
   margin-left: 16px;
-  text-decoration: none;
+  text-decoration: none;         
   padding: 6px;
 }
 .navbar a:hover{
