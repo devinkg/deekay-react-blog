@@ -4,11 +4,6 @@ import BlogList from "./BlogList";
 const Home = () => {
     const [blogs, setBlogs] = useState([]);
 
-    const handleDelete = (blogId) => {
-        const newBlogs = blogs.filter(blog => blog.id !== blogId)
-        setBlogs(newBlogs)
-    }
-
     useEffect(() => {
         fetch('http://localhost:8000/blogs')
             .then(res => {
@@ -22,7 +17,7 @@ const Home = () => {
 
     return (
         <div className="home">
-            <BlogList blogs={blogs} title="All Blogs" handleDelete={handleDelete} />
+            <BlogList blogs={blogs} title="All Blogs" />
         </div>
     );
 }
