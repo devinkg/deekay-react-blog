@@ -1,5 +1,5 @@
 const BlogList = (props) => {
-    const { blogs, title, handleDelete } = props;
+    const { blogs, title } = props;
     
     return (
         <div className="blog-list">
